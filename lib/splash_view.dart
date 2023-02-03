@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:flash_screen/constants/app_colors.dart';
+import 'package:flash_screen/constants/app_images.dart';
 import 'package:flash_screen/login_view.dart';
 import 'package:flutter/material.dart';
 
@@ -23,9 +25,9 @@ class MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: AppColors.whiteColor,
       child: Image.asset(
-        "asset/images/amzone_logo.png",
+        AppImages.splashImage,
       ),
     );
   }
