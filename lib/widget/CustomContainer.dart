@@ -1,3 +1,5 @@
+import 'package:flash_screen/constants/app_colors.dart';
+import 'package:flash_screen/constants/app_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainer extends StatelessWidget {
@@ -16,10 +18,10 @@ class CustomContainer extends StatelessWidget {
       width: kSize.width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Colors.white,
+        color: AppColors.whiteColor,
       ),
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(AppConstants.basePadding),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -29,7 +31,7 @@ class CustomContainer extends StatelessWidget {
                 Text(
                   text!,
                   style: const TextStyle(
-                    color: Colors.black,
+                    color: AppColors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
@@ -37,7 +39,7 @@ class CustomContainer extends StatelessWidget {
                 Text(
                   text2!,
                   style: const TextStyle(
-                    color: Colors.orange,
+                    color: AppColors.orange,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),

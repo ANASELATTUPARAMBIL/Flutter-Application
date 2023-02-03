@@ -1,6 +1,5 @@
+import 'package:flash_screen/constants/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key, this.hintText});
@@ -12,19 +11,19 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: const TextStyle(
-          color: Colors.grey,
+          color: AppColors.gray,
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Colors.blue,
+            color: AppColors.blue,
             width: 2.0,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(
-            color: Colors.grey,
+            color: AppColors.gray,
             width: 2.0,
           ),
         ),
@@ -32,41 +31,3 @@ class CustomTextField extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-// import 'package:flutter/material.dart';
-
-// class custom_textfield extends StatelessWidget {
-//   const custom_textfield({super.key, this.hintText});
-//   final String? hintText;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     Widget textfield = TextFormField(
-//       decoration: InputDecoration(
-//         hintText: hintText,
-//         hintStyle: const TextStyle(
-//           color: Colors.grey,
-//         ),
-//         focusedBorder: OutlineInputBorder(
-//           borderRadius: BorderRadius.circular(10),
-//           borderSide: const BorderSide(
-//             color: Colors.blue,
-//             width: 2.0,
-//           ),
-//         ),
-//         enabledBorder: OutlineInputBorder(
-//           borderRadius: BorderRadius.circular(10),
-//           borderSide: const BorderSide(
-//             color: Colors.grey,
-//             width: 2.0,
-//           ),
-//         ),
-//       ),
-//     );
-    
-//   }
-// }
